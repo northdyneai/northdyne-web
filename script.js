@@ -22,7 +22,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     try {
         // Guardar en Supabase
         const { data: result, error } = await supabaseClient
-            .from('leads')
+            .from('Leads')
             .insert([{
                 empresa: data.empresa,
                 email: data.email,
@@ -62,3 +62,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
