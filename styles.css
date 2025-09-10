@@ -506,3 +506,32 @@ section {
     z-index: 1;
     background: var(--light-bg);
 }
+
+/* FIX PARA ALINEACIÓN DE BOTONES DEL HERO */
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* Asegurar que ambos botones tengan el mismo tamaño */
+.hero-buttons .primary-button,
+.hero-buttons .secondary-button {
+    min-width: 200px;
+    text-align: center;
+    padding: 16px 40px;
+    font-size: 1.1rem;
+    height: auto;
+    line-height: 1.4;
+}
+
+/* Fix específico para hover */
+.primary-button:hover, 
+.cta-button:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,168,232,0.4);
+}
