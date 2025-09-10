@@ -1,4 +1,3 @@
-/* Reset y Variables */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,6 @@
     --dark-bg: #001f3f;
 }
 
-/* Base */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
@@ -23,7 +21,6 @@ body {
 }
 
 .container {
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -36,8 +33,6 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1000;
 }
 
@@ -48,7 +43,6 @@ nav {
     padding: 0.5rem 0;
 }
 
-/* Logo */
 .logo img {
     height: 80px;
     width: auto;
@@ -61,7 +55,6 @@ nav {
     }
 }
 
-/* Navigation */
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -80,7 +73,7 @@ nav {
     color: var(--primary);
 }
 
-/* Hero Section */
+/* Hero Section MEJORADO */
 .hero {
     margin-top: 100px;
     padding: 120px 0;
@@ -112,4 +105,404 @@ nav {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     line-height: 1.2;
-    font-weigh
+    font-weight: 700;
+    color: white;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #00A8E8, #00FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stats Section */
+.stats {
+    padding: 60px 0;
+    background: var(--light-bg);
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.stat p {
+    font-size: 1.1rem;
+    color: var(--secondary);
+}
+
+/* Services mejorado */
+.service-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e1e8ed;
+}
+
+.service-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.service-link:hover {
+    transform: translateX(5px);
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 80px 0;
+    background: white;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    color: var(--secondary);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial {
+    background: var(--light-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.testimonial p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+.testimonial cite {
+    display: block;
+    color: var(--text);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 1.2rem;
+}
+
+/* CTA mejorado */
+.cta-section {
+    background: var(--primary);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+}
+
+.cta-benefits {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.cta-benefits span {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Contact mejorado */
+.contact-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+}
+
+/* Footer Mejorado */
+footer {
+    background: var(--secondary);
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-brand h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact p {
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.footer-links h5 {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    text-align: center;
+    opacity: 0.8;
+    padding-top: 1rem;
+}
+
+/* Botones mejorados */
+.primary-button, .cta-button {
+    background: var(--primary);
+    color: white;
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0,102,204,0.3);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.primary-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.primary-button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.secondary-button {
+    background: transparent;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 2px solid white;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.secondary-button:hover {
+    background: white;
+    color: var(--primary);
+}
+
+/* Emojis */
+.emoji {
+    font-size: 4rem;
+    display: block;
+}
+
+/* Animaciones mejoradas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.hero h1 {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero p {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.hero-buttons {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.stat h3 {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive mejorado */
+@media (max-width: 768px) {
+    .hero { 
+        margin-top: 80px;
+        padding: 80px 0;
+    }
+    .hero h1 { 
+        font-size: 2.5rem; 
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .cta-benefits {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer-content {
+        text-align: center;
+    }
+}
+
+/* Mejoras adicionales */
+.services {
+    padding: 80px 0;
+    background: white;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    color: var(--secondary);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-color: var(--primary);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 18px 25px;
+    border: 2px solid #e1e8ed;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    transition: all 0.3s;
+    background: white;
+    font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0,102,204,0.1);
+}
+
+/* Fix para el formulario */
+.contact {
+    padding: 80px 0;
+    background: var(--light-bg);
+}
+
+.contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+/* Asegurar que todas las secciones sean visibles */
+section {
+    position: relative;
+    z-index: 1;
+}
+
+/* Fix para elementos que se superponen */
+.hero {
+    position: relative;
+    z-index: 2;
+}
+
+.services {
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+.stats {
+    position: relative;
+    z-index: 1;
+    background: var(--light-bg);
+}
