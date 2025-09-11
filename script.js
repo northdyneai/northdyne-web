@@ -1,6 +1,6 @@
 // Configuración de Supabase
-const SUPABASE_URL = 'https://qudjjdrluspriezkbkjk.supabase.co'; // Reemplaza con tu URL
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF1ZGpqZHJsdXNwcmllemtia2prIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc1MTU4NjgsImV4cCI6MjA3MzA5MTg2OH0.eA8DbFJTDiTFU6-26mkAFHnWgjHliM83Xxh8hLQomc0'; // Reemplaza con tu anon key
+const SUPABASE_URL = 'https://qudjjdrluspriezkbkjk.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF1ZGpqZHJsdXNwcmllemtia2prIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc1MTU4NjgsImV4cCI6MjA3MzA5MTg2OH0.eA8DbFJTDiTFU6-26mkAFHnWgjHliM83Xxh8hLQomc0';
 
 // Inicializar cliente de Supabase
 const { createClient } = supabase;
@@ -28,7 +28,8 @@ document.getElementById('contact-form').addEventListener('submit', async functio
                 email: data.email,
                 servicio: data.servicio,
                 mensaje: data.mensaje
-            }]);
+            }])
+            .select();
         
         if (error) {
             throw error;
@@ -62,5 +63,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-
